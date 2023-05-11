@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    background-color: #151515;
+    min-height: 100vh;
+    color: white;
+    p {
+        margin: 0;
+    }
+}
+// para mudar a scroll
+::-webkit-scrollbar {
+    width: 8px;
+}
+// parada escura
+::-webkit-scrollbar-track {
+    background: #151515;
+}
+// parada clara
+::-webkit-scrollbar-trank {
+    background: #868686;
+    border-radius: 40px;
+}
