@@ -1,0 +1,60 @@
+@import "../../../../styles/colors.module.scss";
+
+//HEADER
+.ctaSection {
+    background-color: $lightRed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px 0px;
+    gap: 30px;
+}
+// Logo pequeno
+.imgCta {
+    width: 20px;
+}
+//Header junto do logo
+.nav {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.imgLogoNav {
+    width: 180px;
+}
+//button
+.navBtn {
+    margin: 0px 5px;
+    border-color: transparent;
+    color: $lightGray;
+    &:hover{
+        border-color: $lightRed;
+        color: white;
+        background-color: transparent;
+    }
+}
+// Arrumando a responsidade
+@media (max-width: 445px){
+    .nav {
+        justify-content: center;
+    }
+    .navBtn {
+        margin: 16px 10px;
+        border-color: white;
+        font-size: 14px;
+    }
+    .ctaSection {
+        gap: 10px;
+    }
+}
+
+@media (max-width: 476px) {
+    .ctaSection {
+        text-align: center;
+    }
+    .imgCta {
+        margin: 0px 8px;
+    }
+}
+
