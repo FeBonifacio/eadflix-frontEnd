@@ -16,12 +16,10 @@ main {
 ::-webkit-scrollbar {
     width: 8px;
 }
-// parada escura
 ::-webkit-scrollbar-track {
-    background: #151515;
+background: #151515;
 }
-// parada clara
-::-webkit-scrollbar-trank {
-    background: #868686;
-    border-radius: 40px;
+::-webkit-scrollbar-thumb {
+background: #868686;
+border-radius: 40px;
 }

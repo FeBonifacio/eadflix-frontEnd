@@ -8,12 +8,12 @@ const HeaderNoAuth = function () {
     {/* // HEADER */}
         <div className={styles.ctaSection}>
             < img 
-                src="/homeNoAuth/logoCta2.png"
+                src="/homeNoAuth/logocta1.png"
                 alt="logoCta"
                 className={styles.imgCta}/>
                 <p>Cadastre-se para acessar todos os cursos disponiveis.</p>
             < img 
-                src="/homeNoAuth/logoCta.png"
+                src="/homeNoAuth/logocta2.png"
                 alt="logoCta"
                 className={styles.imgCta}/>
         </div>
@@ -21,7 +21,7 @@ const HeaderNoAuth = function () {
     {/* // Botao de registro de login e Logo GRANDE */}
         <Container className={styles.nav}>
             {/* //lOGO GRANDE */}
-            <img  src="/logoOnebitflix.svg" alt="EducaPlayTec" className={styles.imgLogoNav} />
+            <img  src="/logoEducaPlay.svg" alt="EducaPlayTec" className={styles.imgLogoNav} />
             <div>
                 <Link href="/login">
                     <Button className={styles.navBtn} outline>Entrar</Button>
