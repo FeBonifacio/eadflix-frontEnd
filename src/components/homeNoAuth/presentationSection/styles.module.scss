@@ -21,6 +21,7 @@
 .btnCta {
     font-weight: bold;
     color: white;
+    
 
     display: flex;
     align-items: center;
@@ -81,5 +82,27 @@
     }
     .description {
         font-size: 12px;
+    }
+    .btnCta {
+        font-weight: bold;
+        color: white;
+        
+    
+        display: flex;
+        align-items: center;
+        
+        gap: 25px;
+    
+        padding: 14px 30px;
+        border: 2px solid $lightRed;
+    
+        .btnImg {
+            width: 11px;
+        }
+        &:hover {
+            border-color: $darkRed;
+            color: $lightGray;
+            background-color: transparent;
+        }
     }
 }
