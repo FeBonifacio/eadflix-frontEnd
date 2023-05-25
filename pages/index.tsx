@@ -1,11 +1,22 @@
 import CardsSection from "@/src/components/homeNoAuth/cardsSection";
 import HeaderNoAuth from "@/src/components/homeNoAuth/headerNoAuth";
 import PresentationSection from "@/src/components/homeNoAuth/presentationSection";
+import SlideSection from "@/src/components/homeNoAuth/slideSection";
+import courseService, { CourseType } from "@/src/services/courseService";
+import { GetStaticProps } from "next";
 import Head from "next/head";
+import { ReactNode } from "react";
 import styles from "../styles/HomeNoAuth.module.scss";
 
+
+//interfaces que tera as props do index/page
+interface IndexPageProps {
+  chrildren?: ReactNode;
+  course: CourseType[];
+}
+
 //cabeçario da aplicação
-const HomeNoAuth = () => {
+const HomeNoAuth = ({course}: IndexPageProps) => {
   return (
   <>
     <Head>
@@ -27,9 +38,22 @@ const HomeNoAuth = () => {
       </div>
       {/* cardes */}
       <CardsSection/>
+      <SlideSection newestCourses={course} />
     </main> 
   </>
   );
+};
+
+export const getStaticProps: GetStaticProps = async () => {
+  const res = await courseService.getNewestCourses();
+  return {
+    props: {
+      course: res.data,
+    },
+    //isso aqui é para pagina atualizar sozinha por um dia para pegar as novas informações do back
+    // deixei um dia, vi no curso onebitcode
+    revalidate: 3600 * 24,
+  };
 };
 
 export default HomeNoAuth;
