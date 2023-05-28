@@ -16,8 +16,8 @@ const PresentationSection = function () {
                     </p>
                     <p className={styles.description}>Acesse de onde estiver, a qualquer momento.</p>
                     <Link href="/register">
-                    <Button outline className={styles.btnCta}>
-                        ACESSE AGORA <img src="/buttonPlay.svg" alt="buttonImg" className={styles.btnImg}/>
+                        <Button outline className={styles.btnCta}>ACESSE AGORA
+                        <img src="/buttonPlay.svg" alt="buttonImg" className={styles.btnImg}/>
                     </Button>
                     </Link>
                 </Col>

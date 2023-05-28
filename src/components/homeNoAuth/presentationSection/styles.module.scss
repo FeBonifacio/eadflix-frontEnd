@@ -22,8 +22,9 @@
     font-weight: bold;
     color: white;
     
+    
 
-    display: flex;
+    display: inline-flex;
     align-items: center;
     gap: 25px;
 
@@ -31,7 +32,8 @@
     border: 2px solid $lightRed;
 
     .btnImg {
-        width: 11px;
+        width: 20px;
+        margin: 5px;
     }
     &:hover {
         border-color: $darkRed;

@@ -6,8 +6,10 @@ import SlideSection from "@/src/components/homeNoAuth/slideSection";
 import courseService, { CourseType } from "@/src/services/courseService";
 import { GetStaticProps } from "next";
 import Head from "next/head";
-import { ReactNode } from "react";
+import { ReactNode, useEffect } from "react";
 import styles from "../styles/HomeNoAuth.module.scss";
+import AOS from 'aos';
+import "aos/dist/aos.css";
 
 
 //interfaces que tera as props do index/page
@@ -18,6 +20,12 @@ interface IndexPageProps {
 
 //cabeçario da aplicação
 const HomeNoAuth = ({course}: IndexPageProps) => {
+
+  //usando o bootstrap
+  useEffect(() => {
+    AOS.init();
+  }, [])
+
   return (
   <>
     <Head>
@@ -30,16 +38,20 @@ const HomeNoAuth = ({course}: IndexPageProps) => {
     </Head>
     {/* // todas as informações */}
     <main>
-      <div className={styles.sectionBackground}>
+      <div className={styles.sectionBackground} data-aos="fade-zoom-in" 
+      data-aos-duration="1600">
         {/* //Aqui vamos importar o cabeçalho */}
         <HeaderNoAuth/>
-        
         {/* // Apresentação dos cursos */}
         <PresentationSection/>
       </div>
       {/* cardes */}
+      <div data-aos="fade-right" data-aos-duration="1200">
       <CardsSection/>
+      </div>
+      <div data-aos="fade-up" data-aos-duration="1200">
       <SlideSection newestCourses={course} />
+      </div>
       <Footer/>
     </main> 
   </>
