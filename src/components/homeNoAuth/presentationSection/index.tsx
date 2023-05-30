@@ -24,7 +24,7 @@ const PresentationSection = function () {
 
                 {/* // Imagem principal */}
                 <Col md>
-                    <img src="/homeNoAuth/imgPresentation1.png" 
+                    <img src="/fundo1.jpg" 
                     alt="imgIndex" 
                     className={styles.imgPresentation} />
                 </Col>
