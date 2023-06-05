@@ -198,9 +198,7 @@ const Register = function () {
             </Form>
         </Container>
         <Footer />
-        <ToastComponent color="bg-danger" 
-        isOpen={toastIsOpen} 
-        message={toastMessage} />
+        <ToastComponent color="bg-danger" isOpen={toastIsOpen} message={toastMessage} />
         </main>
         
         </>

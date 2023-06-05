@@ -18,44 +18,54 @@
     justify-content: flex-end;
     transition: 0.3s;
     .cardTitle {
+        font-size: 25px;
         transition: 0.3s;
         font-weight: bold;
         margin-bottom: 8px;
-        justify-content: flex-start
+        justify-content: flex-start;
+        color:red;
+        font-style: bold;
     }
     .cardDescription {
         font-size: 15px;
-        color: $lightGray;
+        color: white;
     }
     &:hover {
         transform: scale(1.03);
         .cardTitle {
-            font-size: 30px;
+            font-size: 40px;
             margin-left: 8px;
         }
     }
 }
 .card1 {
     @extend .card;
-    background-image: url("../../../../public/homeNoAuth/imgFrontend.png");
+    background-image: url("../../../../public/comida1.jpg");
+    // background: linear-gradient(to top, $lightGray)
 }
 .card2 {
     @extend .card;
-    background-image: url("../../../../public/homeNoAuth/imgFrontend.png");
+    background-image: url("../../../../public/programacao.jpg");
+    // background: linear-gradient(to top, $lightGray)
 }
 .card3 {
     @extend .card;
-    background-image: url("../../../../public/homeNoAuth/imgFrontend.png");
+    background-image: url("../../../../public/luta2.jpg");
+    // background: linear-gradient(to top, $lightGray, 100%)
 }
 .card4 {
     @extend .card;
-    background-image: url("../../../../public/homeNoAuth/imgFrontend.png");
+    background-image: url("../../../../public/aula.jpg");
+    // background: linear-gradient(to top, $lightGray)
 }
 .card5 {
     @extend .card;
-    background-image: url("../../../../public/homeNoAuth/imgFrontend.png");
+    background-image: url("../../../../public/pintura.jpg");
+    // background: linear-gradient(to top, $lightGray)
 }
 .card6 {
     @extend .card;
-    background-image: url("../../../../public/homeNoAuth/imgFrontend.png");
+    background-image: url("../../../../public/danca.jpg");
+    
 }
+
