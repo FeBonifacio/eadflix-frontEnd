@@ -1,38 +1,25 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# EducaPlayTec
 
-First, run the development server:
+O EducaPlayTec foi desenvolvido com o objetivo de oferecer uma plataforma educacional abrangente, que aborde diferentes áreas do conhecimento de maneira dinâmica e divertida. Com a utilização do JavaScript e TypeScript, foi possível criar uma interface interativa, onde os estudantes podem explorar conteúdos educacionais de forma prática e envolvente.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+## Stack utilizada
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+**Front-end:** React
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+**Back-end:** Node, postgresSQL, next.js
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Aprendizados
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Com o uso do JAVASCRIPT e TYPESCRIPT, ADMINJS e outras ferramentas, tive a oportunidade de testar ferramentas e aprender masi com esse desafio ministrado pela ONEBITCODE.
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+## Demonstração
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Insira um gif ou um link de alguma demonstração
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+![p](https://github.com/FeBonifacio/eadflix-frontEnd/assets/103700361/ef0c8b9a-4352-4899-b66e-33c03438aca5)
 
-## Deploy on Vercel
+![a](https://github.com/FeBonifacio/eadflix-frontEnd/assets/103700361/15265a8f-baa5-49bd-a820-56c688fe23c7)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
